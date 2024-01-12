@@ -1,0 +1,118 @@
+#team .main-heading, #team .sub-heading{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-flow{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0;
+    /* gap: 15px; */
+}
+
+.card-flow-first{
+    justify-content: space-evenly;
+}
+
+.card{
+    height: 350px;
+    width:  250px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* border: 8px solid #fff; */
+    position: relative;
+    box-shadow: 5px 5px 20px #040207;
+}
+
+.card:hover .card-body{
+    right: 0;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 5px; */
+}
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #28094aaa;
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.8s;
+}
+
+.card-title{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.card-sub-title{
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.card-info{
+    font-size: 16px;
+    line-height: 20px;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.card-buttons{
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+
+.card-btn{
+    text-decoration: none;
+    color: #28094A;
+    background: #fff;
+    padding: 4.5px 3px;
+    padding-top: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card-btn:hover{
+    color: #fff;
+    background: #28094A ;
+}
+
+
+/* applying media query for 600 pixel */
+
+@media only screen and (max-width: 600px){
+    .card-flow{
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .card{
+        margin: 2.5rem 0;
+    }
+
+    #team .main-heading{
+        font-size: 2.5rem;
+    }
+
+    #team .sub-heading{
+        font-size: 2rem;
+    }
+
+}

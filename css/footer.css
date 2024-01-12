@@ -1,0 +1,210 @@
+/* ----------------------------------------code for the footer section ------------------------------------------------- */
+
+#global-footer{
+    text-align: center;
+    /* background-color: white; */
+    /* background-color: #000; */
+    /* background-color: var(--secondary-color); */
+    background-color: #140525;
+    position: absolute;
+    width: 100vw;
+}
+
+#global-footer h3{
+    font-weight: bold;
+    /* color: #000; */
+    color: #fff;
+}
+
+#global-footer p {
+    /* color: #000;    */
+    color: #fff;
+}
+
+.foot-main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* css code for the left side of the footer */
+
+.foot-main .section-width{
+    /* border: 2px solid red; */
+    padding: 2rem 1rem;
+    width: 300px;
+}
+
+.foot-main .foot-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 4rem;
+}
+
+.foot-main .foot-left .foot-logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.foot-content p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 8px 0;
+}
+
+.foot-content p a{
+    text-align: left;
+    color: grey;
+    text-decoration: none;
+}
+
+.foot-left .social-media{
+    display: flex;
+    gap: 25px;
+}
+
+.foot-left .social-media a i{
+    color: #fff;
+}
+
+
+/* css code for the left-mid side of the footer */
+
+.foot-left-mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.foot-left-mid ul li{
+    padding-top: 2.2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.foot-left-mid ul li a{
+    text-decoration: none;
+    color: grey;
+}
+
+
+/* css for the right mid section of the footer */
+
+.foot-right-mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.foot-right-mid ul li{
+    list-style: none;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.foot-right-mid ul li a{
+    text-decoration: none;
+    color: grey;
+}
+
+/* css code for the right side of footer */
+
+.foot-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.foot-right .sponsor-links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.sponsor-links a{
+    padding: 1rem 0;
+}
+
+li .material-symbols-outlined{
+    color: #fff;
+}
+
+/* css for the all rights reserved */
+
+#global-footer .rights{
+    /* background-color: var(--primary-color); */
+    background-color: #fff;
+} 
+
+#global-footer .rights p{
+    padding: 5px 0;
+    /* color: white; */
+    color: #000;
+}
+
+
+/* ---------------------------------- Bootstrap CSS reseting----------------------------------- */
+
+ul{
+    padding-left: 0rem;
+}
+
+h3{
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------------applying media query for 1040px------------------------------------------- */
+
+@media only screen and (max-width: 1040px) {
+    
+    .foot-main{
+        flex-wrap: wrap;
+    }
+    
+    .foot-main .section-width{
+        width: 400px;
+    }
+}
+
+/* applying media query for 800px */
+
+@media only screen and (max-width: 576px) {
+    
+    .foot-main .section-width{
+        width: 300px;
+    }
+}
+
+/* applying media query for 600px */
+
+@media only screen and (max-width: 576px) {
+    
+    .foot-main .foot-left{
+        align-items: center;
+    }
+    
+    .foot-right-mid{
+        align-items: center;
+    }
+
+    .foot-right-mid ul{
+        /* border: 2px solid yellow; */
+        margin-left: 3.2rem;
+    }   
+}
